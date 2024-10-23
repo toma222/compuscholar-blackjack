@@ -1,0 +1,33 @@
+Write a generic Card class.
+Show that Card works as intended by completing the BlackJackCard class.
+Finally, test your code by constructing two BlackJackCards in the main and
+displaying each one in the debug window.
+
+Aces will count as 11 for now. Cards of rank 2 through 10 are valued according to their face value.
+All face cards are 10 points. Aces will count as 11.
+
+---- CHECKLIST ----
+
+Card
+    Constructors - (one default constructor, one with the suit and face parameter)
+    Getter methods
+    Setter methods
+    Equals method
+
+BlackJackCard
+    Constructors - (one default constructor, one with the suit and face parameter)
+        - initilize the card superclass
+    Implement the get value function
+
+---- TEST OUTPUT ----
+
+ZERO of ZERO | value = 0
+ACE of DIAMONDS | value = 11
+FOUR of CLUBS | value = 4
+QUEEN of SPADES | value = 10
+QUEEN of HEARTS | value = 10
+NINE of SPADES | value = 9
+false
+true
+false
+false
