@@ -15,7 +15,7 @@ public class Deck
   {
     //initialize the instance variables
     topCardIndex = 52;
-    stackOfCards = new ArrayList<BlackJackCard>();
+    stackOfCards = new ArrayList<Card>();
 
     //one loop to go through all SUITS
       //one loop to go through all FACES
