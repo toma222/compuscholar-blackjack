@@ -1,0 +1,25 @@
+Write a Dealer class that extends the Player class. Show that Dealer works
+as intended by instantiating a Dealer in the game class and using the Dealer to play a game of
+BlackJack.
+
+You are writting the dealer class
+
+---- CHECKLIST ----
+
+Dealer.java
+    - Constructor
+    - shuffle
+    - deal
+    - hit
+        - the dealer hit function does not require user input
+            only hit if the hand value of the dealer below 18
+
+
+---- TEST OUTPUT ----
+
+I cant really write a test output because the deck is shuffled randomly
+
+However I can tell you that what should happen is the dealer and the player both get
+two cards, then the game determines who won.
+
+YOU DO NOT HAVE TO WRITE THE CODE TO DETERMINE WHO WINS; THAT CODE IS IN THE DealerTestOne.java FILE.
