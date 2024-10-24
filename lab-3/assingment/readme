@@ -1,0 +1,38 @@
+Write a Player class shown below. Show that Player works as intended
+by instantiating a Player in the main and displaying the Player information.
+
+you are writting the player class
+
+---- CHECKLIST ----
+
+Player
+    - initilize the instance variables
+    - addCardToHand
+    - resetHand
+    - setWinCount
+    - getWinCount
+    - getHandSize
+    - getHandValue
+    - hit
+        - return wether or not the player wants to hit
+            - get user input (y or n) and return a bool
+    - toString
+
+
+---- TEST OUTPUT ----
+
+
+toString
+HAND [TWO of DIAMONDS | value = 2, TWO of CLUBS | value = 2]
+
+
+handValue
+4
+
+
+toString
+HAND [TWO of DIAMONDS | value = 2, TWO of CLUBS | value = 2, FIVE of SPADES | value = 5, FOUR of CLUBS | value = 4]
+
+
+handValue
+13

@@ -1,15 +1,16 @@
-Write the Deck class. Deck is a collection of Card references stored in an
-ArrayList. Each of the Card references in the ArrayList will refer to some type of Card object. If you are
-playing BlackJack, the Card references will refer to BlackJackCard objects. If you were playing Poker, the
-Card references might be referring to PokerCard objects. The Deck class could be used for any card
-game. Show that Deck works as intended by instantiating a Deck in the main and displaying all of the
-shuffled cards in the debug window.
+Write the Deck class. 
+Deck is a collection of Card references stored in an ArrayList. 
+Each of the Card references in the ArrayList will refer to some type of Card object. 
+If you are playing BlackJack, the Card references will refer to BlackJackCard objects.
+If you were playing Poker, the Card references might be referring to PokerCard objects.
+The Deck class could be used for any card game.
+Show that Deck works as intended by instantiating a Deck in the main and displaying all of the shuffled cards in the debug window.
 
 You are writting the deck class
 
 ---- CHECKLIST ----
 
-You should copy over your code from lab-1 for the folloing files
+You should copy over your code from lab-1 for the following files
     - Card
     - BlackJackCard
 
