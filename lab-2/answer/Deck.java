@@ -37,6 +37,7 @@ public class Deck
     //add code to shuffle deck – Collections has a shuffle
     // use the package - import java.util.Collections;
     Collections.shuffle(stackOfCards);
+    topCardIndex = 52; // reset the top of the deck
   }
 
   public Card nextCard()

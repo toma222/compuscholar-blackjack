@@ -2,7 +2,7 @@ import java.util.ArrayList;
 public class Player
 {
   private ArrayList<Card> hand; 
-  private int winCount;
+  private int winCount; //
 
   public Player ()
   {
@@ -26,7 +26,7 @@ public class Player
 
   public void setWinCount( int numwins ) { winCount = numwins; }
 
-  public int getWinCount() { return 0; } 
+  public int getWinCount() { return winCount; } 
 
   //number of the cards in hand
   public int getHandSize() { return hand.size(); } 
@@ -34,15 +34,23 @@ public class Player
   //the total value of the cards in hand
   public int getHandValue() {
       int val = 0;
+      
       for(Card c : hand)
         val += c.getValue();
+      
       return val;
   }
 
   public boolean hit()
   {
-    // id say only hit unless the hand value is less than 18
-    return (getHandValue() < 18);
+    Scanner in = new Scanner(System.in);
+    System.out.print("Do you want to hit? [Y/N] ");
+  
+    if(in.nextLine().equals("y")) {
+        return true;
+    } else {
+        return false;
+    }
   }
 
   public String toString()

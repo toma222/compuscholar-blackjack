@@ -23,28 +23,35 @@ public class Player
     //there is a clear() method in ArrayList 
     hand.clear();
   }
-  
-  // Setter method
+
   public void setWinCount( int numwins ) { winCount = numwins; }
 
-  // Getter methods
-  public int getWinCount() { return 0; } 
+  public int getWinCount() { return winCount; } 
+
   //number of the cards in hand
   public int getHandSize() { return hand.size(); } 
 
   //the total value of the cards in hand
   public int getHandValue() {
       int val = 0;
+      
       for(Card c : hand)
         val += c.getValue();
+      
       return val;
   }
 
+  // this is super-duper wierd but you have to implement something like this
   public boolean hit()
   {
-    // id say only hit unless the hand value is less than 18
-	// this logic does not really matter right now though so dont worry much about it
-    return (getHandValue() < 18);
+    Scanner in = new Scanner(System.in);
+    System.out.print("Do you want to hit? [Y/N] ");
+  
+    if(in.nextLine().equals("y")) {
+        return true;
+    } else {
+        return false;
+    }
   }
 
   public String toString()

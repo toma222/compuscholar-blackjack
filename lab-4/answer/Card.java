@@ -4,6 +4,7 @@ public class Card
   private String suit; 
   private int face;
 
+
   //constructors
   public Card(String _suit, int _face) {
       suit = _suit;
@@ -20,6 +21,7 @@ public class Card
   public int getFace() { return face; }
  
   //get methods
+
   public int getValue()
   {
     return face;
@@ -36,3 +38,5 @@ public class Card
     return FACES[face] + " of " + getSuit() + " | value = " + getValue();
   }
 }
+
+

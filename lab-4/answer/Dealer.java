@@ -23,7 +23,6 @@ public class Dealer extends Player
   public boolean hit()
   {
     // id say only hit unless the hand value is less than 18
-    // this logic does not matter right now so dont worry about it to much
     return (getHandValue() < 18);
   }
 }
